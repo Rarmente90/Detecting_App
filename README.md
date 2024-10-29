@@ -37,7 +37,10 @@ The program displays four real-time video frames:
 - Gray Frame: Grayscale version of the current frame.
   ![Gray Frame](Screenshots/Gray_frame.png)
 - Delta Frame: Difference between the first frame and current frame.
+  ![Delta Frame](Screenshots/Delta_Frame.png)
 - Threshold Frame: Binary threshold of the delta frame.
+  ![Threshold Frame](Screenshots/Threshold_Frame.png)
 - Color Frame: The original frame with detected motion highlighted.
+  ![Color Frame](Screenshots/Color_Frame.png)
 
 
