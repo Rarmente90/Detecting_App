@@ -26,7 +26,7 @@ while True:
 	(cnts,_) =cv2.findContours(thresh_frame.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
 	for contour in cnts:
-		if cv2.contourArea(contour) < 8000:		
+		if cv2.contourArea(contour) < 1000:		
 			continue
 		status = 1
 
@@ -46,7 +46,7 @@ while True:
 	cv2.imshow("Threshold Frame", thresh_frame)
 	cv2.imshow("Color Frame", frame)
 
-
+	status_list=status_list[-2:]
 
 	key=cv2.waitKey(1) 						
 	if key==ord('q'):							
