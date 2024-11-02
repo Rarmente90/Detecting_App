@@ -7,6 +7,7 @@ This Python project uses OpenCV and Pandas to detect and track motion through th
 - Highlights moving objects in real-time using a green bounding box.
 - Records the timestamp of motion start and end events.
 - Saves motion event times to a CSV file (`Times.csv`) for later analysis.
+- Create a graph whit the times of the Motion Detecion App
 
 ## How It Works
 1. **Initial Setup**: 
@@ -30,6 +31,7 @@ This Python project uses OpenCV and Pandas to detect and track motion through th
 - Python 3.x
 - OpenCV
 - Pandas
+- Bokeh
 
 ## Screens
 The program displays four real-time video frames:
@@ -39,8 +41,10 @@ The program displays four real-time video frames:
 - Delta Frame: Difference between the first frame and current frame.
   ![Delta Frame](Screenshots/Delta_Frame.png)
 - Threshold Frame: Binary threshold of the delta frame.
-  ![Threshold Frame](Screenshots/Tthreshold_frame.png)
+  ![Threshold Frame](Screenshots/threshold_frame.png)
 - Color Frame: The original frame with detected motion highlighted.
   ![Color Frame](Screenshots/Color_Frame.png)
+-Motion Graph: Times of the movement recording of the webcam.
+  ![Motion Graph](Screenshots/Motion_Graph.png)
 
 
