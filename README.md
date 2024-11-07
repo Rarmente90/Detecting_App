@@ -37,14 +37,22 @@ This Python project uses OpenCV and Pandas to detect and track motion through th
 ## Screens
 The program displays four real-time video frames:
 
-- Gray Frame: Grayscale version of the current frame.
-  ![Gray Frame](Screenshots/Gray_frame.png)
+   ![Gray Frame](Screenshots/Gray_frame.png)
+   
+   Gray Frame: Grayscale version of the current frame.
+
   
-- Delta Frame: Difference between the first frame and current frame.
-  ![Delta Frame](Screenshots/Delta_Frame.png)
+   ![Delta Frame](Screenshots/Delta_Frame.png)
+   
+   Delta Frame: Difference between the first frame and current frame.
+
   
-- Threshold Frame: Binary threshold of the delta frame.
   ![Threshold Frame](Screenshots/threshold_frame.png)
   
-- Color Frame: The original frame with detected motion highlighted.
+  Threshold Frame: Binary threshold of the delta frame.
+
+  
   ![Color Frame](Screenshots/Color_Frame.png)
+  
+  Color Frame: The original frame with detected motion highlighted.
+  
