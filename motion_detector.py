@@ -34,21 +34,21 @@ while True:
 		cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3)
 	status_list.append(status)
 
-	if status_list[-1]==1 and status_list[-2]==0:
+	if status_list[-1] == 1 and status_list[-2] == 0:
 		times.append(datetime.now())
-	if status_list[-1]==0 and status_list[-2]==1:
+	if status_list[-1] == 0 and status_list[-2] == 1:
 		times.append(datetime.now())
 
 	cv2.imshow("Gray Frame", gray)			
-	cv2.imshow("Delta Frame",delta_frame)
+	cv2.imshow("Delta Frame", delta_frame)
 	cv2.imshow("Threshold Frame", thresh_frame)
 	cv2.imshow("Color Frame", frame)
 
-	status_list=status_list[-2:]
+	status_list = status_list[-2:]
 
-	key=cv2.waitKey(1)					
-	if key==ord('q'):
-		if status==1:
+	key = cv2.waitKey(1)				
+	if key == ord('q'):
+		if status == 1:
 			times.append(datetime.now())
 		break
 
